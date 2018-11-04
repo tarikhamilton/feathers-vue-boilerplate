@@ -1,0 +1,9 @@
+{
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "rules": {
+    "semi": ["error", "never"]
+  },
+  "extends": ["plugin:vue/essential"]
+}

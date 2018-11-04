@@ -1,0 +1,58 @@
+{
+  "name": "feathers-vue-boilerplate",
+  "description": "Feathers 3 and Vue.js 2 in a single project.",
+  "version": "0.0.0",
+  "homepage": "",
+  "main": "src",
+  "keywords": [
+    "feathers",
+    "vue",
+    "boilerplate"
+  ],
+  "author": {
+    "name": "Tarik Hamilton",
+    "email": "tarikhamilton@gmail.com"
+  },
+  "directories": {
+    "lib": "src",
+    "test": "test/"
+  },
+  "engines": {
+    "node": "^10.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "scripts": {
+    "test": "npm run eslint && npm run mocha",
+    "eslint": "eslint src/. test/. --config .eslintrc.json",
+    "dev": "nodemon src/",
+    "dev:client": "vue-cli-service serve",
+    "start": "node src/",
+    "mocha": "mocha test/ --recursive --exit"
+  },
+  "dependencies": {
+    "@feathersjs/configuration": "^2.0.2",
+    "@feathersjs/errors": "^3.3.4",
+    "@feathersjs/express": "^1.2.5",
+    "@feathersjs/feathers": "^3.2.1",
+    "@feathersjs/socketio": "^3.2.4",
+    "compression": "^1.7.3",
+    "cors": "^2.8.4",
+    "helmet": "^3.13.0",
+    "serve-favicon": "^2.5.0",
+    "winston": "^3.1.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.1.1",
+    "@vue/cli-plugin-eslint": "^3.1.4",
+    "@vue/cli-service": "^3.1.2",
+    "@vue/test-utils": "^1.0.0-beta.25",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^4.7.1",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.4",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "vue": "^2.5.17",
+    "vue-template-compiler": "^2.5.17"
+  }
+}
